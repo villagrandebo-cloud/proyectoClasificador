@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Clasificador de Residuos con Arduino</title>
-
-    <!-- p5.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <title>TACHIA - Clasificador Inteligente</title>
     
-    <!-- ml5.js -->
-    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <!-- Estilos generales de la página -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 38px;
+            letter-spacing: 2px;
+            color: #4CAF50;
+            margin-bottom: 5px;
+        }
+        .subtitulo {
+            color: #bbb;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        #contenedor-sketch {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+    </style>
 
-    <!-- Tu archivo de código principal -->
+    <!-- Librerías de p5.js y ml5.js necesarias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+</head>
+<body>
+
+    <!-- Título principal arriba -->
+    <h1>TACHIA</h1>
+    <div class="subtitulo">Sistema Inteligente de Clasificación de Residuos</div>
+
+    <!-- Contenedor donde p5.js dibujará la cámara y los resultados -->
+    <div id="contenedor-sketch"></div>
+
+    <!-- Tu archivo de código p5.js -->
     <script src="sketch.js"></script>
-  </head>
-
-  <body>
-  </body>
+</body>
 </html>
